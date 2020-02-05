@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src --ext .js --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:cover": "jest --coverage=true",
+    "test:ci": "jest --ci --coverage=true --runInBand",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.1.0"
   }
 }
