@@ -1,0 +1,24 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": [ "standard" ],
+  "rules": {
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "never",
+        "exports": "never",
+        "functions": "ignore"
+      }
+    ],
+    "no-console": "warn",
+    "no-unused-vars": "warn",
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
+}
