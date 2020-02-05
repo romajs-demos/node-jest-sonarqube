@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src --ext .js --fix",
+    "sonar:scanner": "sonar-scanner",
     "test": "jest",
     "test:cover": "jest --coverage=true",
     "test:ci": "jest --ci --coverage=true --runInBand",
@@ -28,7 +29,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.1",
-    "jest": "^25.1.0"
+    "jest": "^25.1.0",
+    "sonarqube-scanner": "^2.5.0"
   },
   "husky": {
     "hooks": {
